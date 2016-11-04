@@ -1,5 +1,5 @@
 body{
-  margin: 0 auto;
+  margin: 0;
 }
 
 #container{
@@ -52,10 +52,6 @@ p.bubbleText{
   background-color: rgba(95, 0, 0, 0.5);
 }
 
-body {
-  margin: 0;
-}
-
 footer {
   padding:  2%;
   box-sizing: border-box;
@@ -65,7 +61,7 @@ footer {
 }
 
 footer img {
-  padding: 0% 5%;
+  padding: 1% 5%;
   width: 50px;
   height: 50px;
   border-radius: 50%;
