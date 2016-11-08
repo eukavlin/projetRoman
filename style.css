@@ -1,59 +1,66 @@
-body{
-  margin: 0 auto;
+@font-face {
+  font-family: Karan;
+  src: url(fonts/KARAN___.ttf);
 }
 
-#container{
+body{
+  margin: 0;
+}
+
+.container.roman{
   margin: auto;
-  width: 90vw;
+  width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .chapter{
   width: 100%;
   display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
 }
 
 .vignette{
-  flex-wrap: wrap;
-  width: 33%;
+  width: 32%;
   height: auto;
-  min-width: 330px;
-  display: inline-block;
   position: relative;
+  font-family: Karan;
+  font-size: 100%;
+  margin: 1vw 0;
+  box-sizing: border-box;
 }
 
 img.photoVignette{
   width: 100%;
   height: auto;
+  border-radius: 2%;
   z-index: 0;
 }
 
-
-.vignette img.photoVignette + .textBubble{
+.vignette img.photoVignette + .textBox{
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.textBubble{
+.textBox{
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
+  border: 3px solid black;
+  border-radius: 2%;
   box-sizing: border-box;
   z-index: 1;
 }
 
-p.bubbleText{
+p.textBubble{
   background-color: rgba(95, 0, 0, 0.5);
-}
-
-body {
-  margin: 0;
+  display: inline-block;
+  margin: auto;
+  padding: 3px;
+  border-radius: 10%;
+  letter-spacing: -0.1vw;
 }
 
 footer {
@@ -75,4 +82,20 @@ footer img:hover {
   /*opacity: 0.9;*/
   transform: scale(1.5);
   transition: transform 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1024px){
+  .vignette{
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .container.roman{
+    width: 100%;
+  }
+
+  .vignette{
+    width: 100%;
+  }
 }
