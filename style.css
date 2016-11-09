@@ -5,6 +5,12 @@
   src: url(fonts/KARAN___.ttf);
 }
 
+/* Reset User Agent */
+
+button {
+  border-width: 0px;
+}
+
 /* General Styles */
 
 body{
@@ -104,13 +110,37 @@ main {
 #intro {
   position: absolute;
   bottom:0;
-  background: rgba(222, 222, 222, 0.47);
+  background: rgba(222, 222, 222, 0.7);
   padding: 2%;
   box-sizing: border-box;
 }
 
 button {
   float: right;
+  padding:2%;
+  background: grey;
+  color:white;
+  font-weight:bold;
+  border 2px solid white;
+  border-radius: 0 50px;
+  transition-duration:2s;
+}
+
+button:hover {
+  background:white;
+  color: grey;
+  border: grey;
+
+}
+
+button a{
+  color:white;
+  text-decoration: none;
+}
+
+button a:hover{
+  color:grey;
+  transform: scale(1.5);
 }
 
 /* Media Queries */
