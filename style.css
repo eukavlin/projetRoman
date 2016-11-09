@@ -1,11 +1,38 @@
+/* Fonts */
+
 @font-face {
   font-family: Karan;
   src: url(fonts/KARAN___.ttf);
 }
 
+/* General Styles */
+
 body{
   margin: 0;
 }
+
+footer {
+  padding:  2%;
+  box-sizing: border-box;
+  background-color: #000;
+  line-height: auto;
+  text-align: center;
+}
+
+footer img {
+  padding: 0% 5%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+footer img:hover {
+  /*opacity: 0.9;*/
+  transform: scale(1.5);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Structure Roman Photo Alice */
 
 .container.roman{
   margin: auto;
@@ -63,26 +90,30 @@ p.textBubble{
   letter-spacing: -0.1vw;
 }
 
-footer {
-  padding:  2%;
+/* Structure for Intro Page Laurene */
+
+main {
+  position:relative;
+  margin: 5% auto;
+  max-width: 1400px;
+  height:60vh;
+  background: url('photos/DSC_0532.jpg');
+  background-size: cover;
+}
+
+#intro {
+  position: absolute;
+  bottom:0;
+  background: rgba(222, 222, 222, 0.47);
+  padding: 2%;
   box-sizing: border-box;
-  background-color: #000;
-  line-height: auto;
-  text-align: center;
 }
 
-footer img {
-  padding: 0% 5%;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+button {
+  float: right;
 }
 
-footer img:hover {
-  /*opacity: 0.9;*/
-  transform: scale(1.5);
-  transition: transform 0.5s ease-in-out;
-}
+/* Media Queries */
 
 @media screen and (max-width: 1024px){
   .vignette{
