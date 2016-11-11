@@ -95,18 +95,25 @@ h4 {
 }
 
 /*Container*/
+
 .container.roman{
-  margin: auto;
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
-.chapter{
+.chapterBox{
   width: 100%;
+  background-image: url(photos/feuilles.jpg);
+}
+
+.chapter{
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   align-content: space-around;
   flex-wrap: wrap;
+
 }
 
 .vignette{
@@ -207,11 +214,7 @@ footer img:hover {
   }
 }
 
-@media screen and (max-width: 768px){
-  .container.roman{
-    width: 100%;
-  }
-
+@media screen and (max-width: 640px){
   .vignette{
     width: 100%;
   }
