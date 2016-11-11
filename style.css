@@ -1,3 +1,8 @@
+@font-face{
+  font-family: Karan;
+  src: url(fonts/KARAN___.ttf);
+}
+
 body{
   margin: 0;
 }
@@ -103,7 +108,63 @@ h4 {
 
 .chapterBox{
   width: 100%;
+  padding-top: 1%;
+  font-family: Karan;
+}
+
+.chapterBox h2{
+  margin: 2% auto;
+  text-align: center;
+}
+
+.introduction, .conclusion{
+  background-image: url(photos/fond-informatique-bleu.jpg);
+}
+
+.introduction h2, .conclusion h2{
+  width: 20%;
+  background-color: white;
+  color: blue;
+}
+
+.cycliste{
+  background-image: url(photos/pois-rouges.jpg);
+}
+
+.cycliste h2{
+  width: 20%;
+  background-color: red;
+  color: white;
+}
+
+.derrick{
+  background-image: url(photos/yeux.jpg);
+}
+
+.derrick h2{
+  width: 30%;
+  background-color: white;
+  color: darkred;
+}
+
+.indiana{
   background-image: url(photos/feuilles.jpg);
+}
+
+.indiana h2{
+  width: 20%;
+  background-color: beige;
+  color: darkgreen;
+}
+
+.chapeau{
+  background-image: url(photos/noir-et-blanc.png);
+}
+
+.chapeau h2{
+  width: 30%;
+  background-color: black;
+  color: white;
 }
 
 .chapter{
@@ -113,14 +174,12 @@ h4 {
   justify-content: space-around;
   align-content: space-around;
   flex-wrap: wrap;
-
 }
 
 .vignette{
   width: 32%;
   height: auto;
   position: relative;
-  font-family: Karan;
   font-size: 100%;
   margin: 1vw 0;
 }
@@ -159,8 +218,7 @@ img.photoVignette{
   z-index: 1;
 }
 
-.textBubble{
-  background-color: rgba(95, 0, 0, 0.5);
+p.textBubble{
   display: inline-block;
   margin: auto;
   padding: 3px;
@@ -168,8 +226,8 @@ img.photoVignette{
   letter-spacing: -0.1vw;
 }
 
-.introduction > .textBubble, .conclusion > .textBubble{
-  background-color: rgba(95, 0, 0, 0.5);
+.introduction  p, .conclusion  p{
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 
