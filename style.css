@@ -111,9 +111,10 @@ h4 {
   font-family: Karan;
 }
 
-.titres{
+.titres, .theEnd{
   display: flex;
   padding: 2%;
+  justify-content: flex-end;
 }
 
 .titres h2{
@@ -124,9 +125,11 @@ h4 {
   background-image: url(photos/fond-informatique-vert.jpg);
 }
 
-.introduction h2, .conclusion h2{
+.introduction h2, .conclusion h2, .theEnd h3{
   background-color: black;
   color: lightgreen;
+  border:2px solid lightgreen;
+  border-radius: 10%;
 }
 
 .cycliste{
@@ -134,8 +137,10 @@ h4 {
 }
 
 .cycliste h2{
-  background-color: red;
-  color: white;
+  background-color: white;
+  color: blue;
+  border:2px solid blue;
+  border-radius: 10%;
 }
 
 .derrick{
@@ -143,8 +148,10 @@ h4 {
 }
 
 .derrick h2{
-  background-color: white;
+  background-color: lightyellow;
   color: darkred;
+  border:2px solid darkred;
+  border-radius: 10%;
 }
 
 .indiana{
@@ -154,6 +161,8 @@ h4 {
 .indiana h2{
   background-color: beige;
   color: darkgreen;
+  border:2px solid darkgreen;
+  border-radius: 10%;
 }
 
 .chapeau{
@@ -163,6 +172,8 @@ h4 {
 .chapeau h2{
   background-color: black;
   color: white;
+  border:2px solid white;
+  border-radius: 10%;
 }
 
 .chapter{
@@ -282,6 +293,10 @@ footer img:hover {
 @media screen and (max-width: 640px){
   .vignette{
     width: 100%;
+  }
+
+  .chapter{
+    padding: 2%;
   }
 
   .petite{
