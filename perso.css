@@ -4,6 +4,9 @@ html, body {
     background-image: url('photos/water.jpg');
     background-size: cover;
 }
+@font-face {
+  font-family: 'SuperMario256';
+}
 .fiche-container {
     /*hauteur totale - 2xpadding*/
     display: flex;
@@ -86,9 +89,15 @@ p {
     font-size: 20px;
     text-align: center;
 }
+h3 {
+  font-family:
+}
+span {
+
+}
 .prenom {
     font-weight: bold;
-    font: Roboto;
+    font-family: 'SuperMario256';
     font-size: 25px;
     color: blue;
 }
@@ -189,13 +198,13 @@ p {
     width: 100%;
     -moz-animation: furtif 2s ease-out;
     -webkit-animation: furtif 2s ease-out;
-    background-color: #f674a4;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f674a4), to(#e06995));
-    background-image: -webkit-linear-gradient(top, #f674a4, #e06995);
-    background-image: -moz-linear-gradient(top, #f674a4, #e06995);
-    background-image: -ms-linear-gradient(top, #f674a4, #e06995);
-    background-image: -o-linear-gradient(top, #f674a4, #e06995);
-    background-image: linear-gradient(top, #f674a4, #e06995);
+    background-color: #f74c35;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f74c35), to(#f7260a));
+    background-image: -webkit-linear-gradient(top, #f74c35, #f7260a);
+    background-image: -moz-linear-gradient(top, #f74c35, #f7260a);
+    background-image: -ms-linear-gradient(top, #f74c35, #f7260a);
+    background-image: -o-linear-gradient(top, #f74c35, #f7260a);
+    background-image: linear-gradient(top, #f74c35, #f7260a);
 }
 .mana {
     width: 90%;

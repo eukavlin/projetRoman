@@ -1,0 +1,142 @@
+[33mcommit ff18ab3a14e9d339804cfe6f73fd796b121e53ca[m
+Author: 2hill <jamil.rahou@laposte.net>
+Date:   Wed Nov 9 14:48:21 2016 +0100
+
+    ajoute page perso jamil v1.0
+
+[33mcommit 5dc1a2741fc4104066be5a918bb3e0433499cbf4[m
+Merge: ede2928 c60fb05
+Author: Eukavlin <brodin.elise@gmail.com>
+Date:   Wed Nov 9 12:04:18 2016 +0100
+
+    Merge branch 'eukavlin'
+
+[33mcommit c60fb05bfdc2d14164a58065a693cf78c11eff5d[m
+Author: Eukavlin <brodin.elise@gmail.com>
+Date:   Wed Nov 9 09:59:17 2016 +0100
+
+    Retrait position absolute footer css
+
+[33mcommit ede2928e2d320edd5be2080cedd70cba7a6084e8[m
+Author: Eukavlin <brodin.elise@gmail.com>
+Date:   Tue Nov 8 16:47:32 2016 +0100
+
+    modif css, header + menu, modif roman 2
+
+[33mcommit 8b96378093adfb80770e2a48f1c7fa9b4c6b18a7[m
+Author: Eukavlin <brodin.elise@gmail.com>
+Date:   Tue Nov 8 16:47:11 2016 +0100
+
+    modif css, header + menu, modif roman
+
+[33mcommit 1c805e8756ca2f8128c6a17f3da65d0d84edbb04[m
+Author: Eukavlin <brodin.elise@gmail.com>
+Date:   Tue Nov 8 16:23:22 2016 +0100
+
+    mise à jour branche
+
+[33mcommit 22f316cb4c1a92a05bd5e3077d6e08eabdf3c324[m
+Merge: 5d94f26 117bad9
+Author: Eukavlin <brodin.elise@gmail.com>
+Date:   Tue Nov 8 14:34:58 2016 +0100
+
+    suppression css + roman
+
+[33mcommit 5d94f263db081be11c6eb9d58f213213314f7a06[m
+Author: Eukavlin <brodin.elise@gmail.com>
+Date:   Tue Nov 8 14:09:39 2016 +0100
+
+    header + footer
+
+[33mcommit 117bad9af9b63c2fd488fc0b2f36cadb8b87de7b[m
+Merge: bdc3f03 a8a9797
+Author: eleutheros84 <alicedranssfield@gmail.com>
+Date:   Tue Nov 8 13:57:40 2016 +0100
+
+    Merge branch 'eleu/brancheRoman'
+
+[33mcommit a8a9797aa4cd5be9a1ee1a4510bfe3183c0895f1[m
+Author: eleutheros84 <alicedranssfield@gmail.com>
+Date:   Tue Nov 8 12:16:43 2016 +0100
+
+    disposition vignettes
+
+[33mcommit bdc3f03acc5738923ef89adf6be9aa0806c3f272[m
+Author: eleutheros84 <alicedranssfield@gmail.com>
+Date:   Fri Nov 4 19:02:35 2016 +0100
+
+    retrait d'un fichier texte vide
+
+[33mcommit f100f3b54f9ee030ff36dda1bee5160f53144e1b[m
+Merge: 68df7b1 5778b22
+Author: eleutheros84 <alicedranssfield@gmail.com>
+Date:   Fri Nov 4 18:57:47 2016 +0100
+
+    Merge branch 'eleu/brancheRoman'
+
+[33mcommit 5778b222c88bf303e0c9142fac467a053d006a90[m
+Author: eleutheros84 <alicedranssfield@gmail.com>
+Date:   Fri Nov 4 18:32:08 2016 +0100
+
+    refresh après exos
+
+[33mcommit 68df7b187a18751ec5d377d94338fff858dbfdb8[m
+Merge: 4085d56 56041a5
+Author: eleutheros84 <alicedranssfield@gmail.com>
+Date:   Fri Nov 4 16:53:50 2016 +0100
+
+    Merge branch 'master' of https://github.com/eleutheros84/projetRoman
+
+[33mcommit 4085d5676caa1a9e1e6330c1bfe35904cdb481d2[m
+Author: eleutheros84 <alicedranssfield@gmail.com>
+Date:   Fri Nov 4 15:13:09 2016 +0100
+
+    test1
+
+[33mcommit b167a88dcbd0401c9faed4f3223cc853b1d19abb[m
+Author: Eukavlin <brodin.elise@gmail.com>
+Date:   Fri Nov 4 15:09:45 2016 +0100
+
+    modification body margin 0 auto
+
+[33mcommit 56041a5bcbea4c8072754e258a9b579d81f0a000[m
+Author: 2hill <jamil.rahou@laposte.net>
+Date:   Fri Nov 4 15:08:07 2016 +0100
+
+    test html
+
+[33mcommit 598258223bf315141e3a30c6bc6fcd93c0c397ce[m
+Author: Eukavlin <brodin.elise@gmail.com>
+Date:   Fri Nov 4 15:06:18 2016 +0100
+
+    commit sur la branche eukavlin
+
+[33mcommit 494780e3272b475b46bb1e81e7d0120b63502aa4[m
+Author: 2hill <jamil.rahou@laposte.net>
+Date:   Fri Nov 4 12:14:22 2016 +0100
+
+    test sur branche jam
+
+[33mcommit fdb3a7e19fa10894fc40024dce56a3066246ac0c[m
+Author: Eukavlin <brodin.elise@gmail.com>
+Date:   Fri Nov 4 10:23:26 2016 +0100
+
+    Ajout footer par Elise dans index.html et css
+
+[33mcommit f6fd8579341418bef9dd848c39fb7c4220b8ad9a[m
+Author: eleutheros84 <alicedranssfield@gmail.com>
+Date:   Fri Nov 4 10:16:28 2016 +0100
+
+    remodif nom de fichier
+
+[33mcommit 95754267e7ecc1520dddbec8f4e91ab52f80c044[m
+Author: eleutheros84 <alicedranssfield@gmail.com>
+Date:   Fri Nov 4 09:44:36 2016 +0100
+
+    correction nom de fichier
+
+[33mcommit cedf1205932e6faaa833894838b940b74130fac8[m
+Author: eleutheros84 <alicedranssfield@gmail.com>
+Date:   Fri Nov 4 09:23:42 2016 +0100
+
+    commit 1 du roman photo
