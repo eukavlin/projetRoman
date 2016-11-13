@@ -230,13 +230,41 @@ img.photoVignette{
 }
 
 p.textBubble{
-  font-size: 100%;
-  font-weight: bold;
   display: inline-block;
+  font-size: 1.1vw;
+  font-weight: bold;
   margin: auto;
-  padding: 3px;
-  border-radius: 10%;
+  padding: 15px;
+  border-radius: 50%;
   letter-spacing: -0.1vw;
+  border: 2px solid black;
+  background-color: white;
+  word-wrap: normal;
+  text-align: center;
+}
+
+.topRight{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.topLeft{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bottomRight{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.bottomLeft{
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 p.introduction  , p.conclusion, p.liaison{
@@ -288,6 +316,10 @@ footer img:hover {
   .petite{
     display: none;
   }
+
+  p.textBubble{
+    font-size: 1.8vw;
+  }
 }
 
 @media screen and (max-width: 640px){
@@ -309,5 +341,9 @@ footer img:hover {
 
   .moyenne{
     display: none;
+  }
+
+  p.textBubble{
+    font-size: 2.8vw;
   }
 }
