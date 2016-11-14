@@ -1,58 +1,120 @@
-/* Fonts */
-
-@font-face {
-  font-family: Karan;
-  src: url(fonts/KARAN___.ttf);
-}
-
-/* Reset User Agent */
-
-button {
-  border-width: 0px;
-}
-
-/* General Styles */
-
 body{
   margin: 0;
 }
 
-footer {
-  padding:  2%;
-  box-sizing: border-box;
+/*Header*/
+header{
+  width: 100%;
+  height: auto;
   background-color: #000;
-  line-height: auto;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align:center;
+  z-index: 3;
+}
+
+header ul li {
+  z-index: 2;
+}
+
+h1 {
+  position: absolute;
+  width: auto;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 0;
   text-align: center;
+  background-color:#000;
 }
 
-footer img {
-  padding: 0% 5%;
+header ul li p{
+  position: relative;
+  left: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 20px;
   width: 50px;
-  height: 50px;
-  border-radius: 50%;
+  text-align: left;
+  -webkit-transition: width 0.1s;
+  transition: width 0.1s;
 }
 
-footer img:hover {
-  /*opacity: 0.9;*/
-  transform: scale(1.5);
-  transition: transform 0.5s ease-in-out;
+header ul li a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 24px;
 }
 
-/* Structure Roman Photo Alice */
+header ul li ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+header ul li:hover {
+ width: 200px;
+}
+
+header ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  border: 1px solid #000;
+  background-color: #000;
+
+}
+
+header li:hover ul li {
+   float:none;
+   padding: 5px 0;
+ }
+
+ header li ul li {
+   font-size: 16px;
+ }
+
+ header li ul a:hover li {
+   font-weight: bold;
+ }
+
+
+h4 {
+  margin: 0;
+  font-size: 19px;
+  color: #000;
+  background-color: #FFF;
+}
+
+/*Container*/
 
 .container.roman{
-  margin: auto;
-  width: 90%;
+  width: 100%;
   height: auto;
+}
+
+.chapterBox{
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  background-image: url(photos/feuilles.jpg);
 }
 
 .chapter{
-  width: 100%;
+  width: 90%;
+  margin: auto;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-around;
+  align-content: space-around;
   flex-wrap: wrap;
+
 }
 
 .vignette{
@@ -62,7 +124,18 @@ footer img:hover {
   font-family: Karan;
   font-size: 100%;
   margin: 1vw 0;
-  box-sizing: border-box;
+}
+
+.grande{
+  width: 98.5%;
+}
+
+.moyenne{
+  display: none;
+}
+
+.petite{
+  display: none;
 }
 
 img.photoVignette{
@@ -80,14 +153,14 @@ img.photoVignette{
 
 .textBox{
   width: 100%;
-  height: 100%;
+  height: calc(100% - 1px);
   border: 3px solid black;
   border-radius: 2%;
   box-sizing: border-box;
   z-index: 1;
 }
 
-p.textBubble{
+.textBubble{
   background-color: rgba(95, 0, 0, 0.5);
   display: inline-block;
   margin: auto;
@@ -96,67 +169,66 @@ p.textBubble{
   letter-spacing: -0.1vw;
 }
 
-/* Structure for Intro Page Laurene */
-
-main {
-  position:relative;
-  margin: 5% auto;
-  max-width: 1400px;
-  height:60vh;
-  background: url('photos/DSC_0532.jpg');
-  background-size: cover;
+.introduction > .textBubble, .conclusion > .textBubble{
+  background-color: rgba(95, 0, 0, 0.5);
 }
 
-#intro {
-  position: absolute;
-  bottom:0;
-  background: rgba(222, 222, 222, 0.7);
-  padding: 2%;
+
+/*footer*/
+footer {
+  padding: 1%;
   box-sizing: border-box;
+  background-color: #000;
+  text-align: center;
+  width: 100%;
 }
 
-button {
-  float: right;
-  padding:2%;
-  background: grey;
-  color:white;
-  font-weight:bold;
-  border 2px solid white;
-  border-radius: 0 50px;
-  transition-duration:2s;
+footer img {
+  padding:0 3%;
+  width: 5%;
+  height: 5%;
+  border-radius: 50%;
 }
 
-button:hover {
-  background:white;
-  color: grey;
-  border: grey;
-
+footer img:hover {
+  /*opacity: 0.9;*/
+  transform: scale(1.3);
+  transition: transform 0.5s ease-in-out;
 }
-
-button a{
-  color:white;
-  text-decoration: none;
-}
-
-button a:hover{
-  color:grey;
-  transform: scale(1.5);
-}
-
-/* Media Queries */
 
 @media screen and (max-width: 1024px){
   .vignette{
-    width: 49%;
+    width: 48.5%;
+  }
+
+  .moyenne{
+    width: 98.5%;
+    display: inline-block;
+  }
+
+  .grande{
+    display: none;
+  }
+
+  .petite{
+    display: none;
   }
 }
 
-@media screen and (max-width: 768px){
-  .container.roman{
+@media screen and (max-width: 640px){
+  .vignette{
     width: 100%;
   }
 
-  .vignette{
-    width: 100%;
+  .petite{
+    display: block;
+  }
+
+  .grande{
+    display: none;
+  }
+
+  .moyenne{
+    display: none;
   }
 }
