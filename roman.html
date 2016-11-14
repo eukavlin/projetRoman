@@ -4,27 +4,30 @@
     <link rel="stylesheet" href="style.css"/>
     <meta charset="utf-8"/>
   </head>
-  <header>
-    <ul>
-      <li><a href=""><p>☰</p></a>
-        <ul>
-          <a href="index.html"><li>Accueil</li></a>
-          <a href="roman.html"><li>Roman-Photo</li></a>
-          <li class="menu-subtitle"><h4>Personnages</h4></li>
-          <a href="jamil.html"><li>Jamil</li></a>
-          <a href="lauren.html"><li>Laurene</li></a>
-          <a href="alice.html"><li>Alice</li></a>
-          <a href="elise.html"><li>Élise</li></a>
-        </ul>
-      </li>
-    </ul>
-  <h1>Manque d'inspiration</h1>
-  </header>
-
   <body>
+
+    <header>
+      <a href="index.html" class="menu-home">home</a>
+      <h1>Manque d'inspiration</h1>
+      <ul>
+        <li><a href="#"><p>☰</p></a>
+          <ul>
+            <a href="roman.html"><li class="levelone">Roman-Photo</li></a>
+            <li  class=" levelone sousmenu">Personnages
+              <ul class="leveltwo">
+                <a href="jamil.html"><li>Jamil</li></a>
+                <a href="lauren.html"><li>Laurene</li></a>
+                <a href="alice.html"><li>Alice</li></a>
+                <a href="elise.html"><li>Élise</li></a>
+              </ul></li>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
     <div class="container roman">
       <div class="chapterBox introduction">
-        <div class="titres"><h2>introduction</h2></div>
         <div class="chapter">
           <div class="vignette grande">
             <img src="photos/indiana1grande.jpg" class="photoVignette" alt="photoDeGroupe1"/>
@@ -72,7 +75,6 @@
 
 
         <div class="chapterBox cycliste">
-          <div class="titres"><h2>le cycliste</h2></div>
           <div class="chapter">
             <div class="vignette grande">
               <img src="photos/indiana1grande.jpg" class="photoVignette" alt="photoDeGroupe1"/>
@@ -119,7 +121,6 @@
           </div>
 
           <div class="chapterBox derrick">
-            <div class="titres"><h2>inspectrice beatrice</h2></div>
             <div class="chapter">
               <div class="vignette grande">
                 <img src="photos/indiana1grande.jpg" class="photoVignette" alt="photoDeGroupe1"/>
@@ -166,7 +167,6 @@
           </div>
 
           <div class="chapterBox indiana">
-            <div class="titres"><h2>archéoindiana</h2></div>
             <div class="chapter">
               <div class="vignette grande">
                 <img src="photos/indiana1grande.jpg" class="photoVignette" alt="photoDeGroupe1"/>
@@ -246,54 +246,73 @@
         </div>
 
         <div class="chapterBox chapeau">
-          <div class="titres"><h2>le chapeau maléfique</h2></div>
           <div class="chapter">
             <div class="vignette grande">
-              <img src="photos/indiana1grande.jpg" class="photoVignette" alt="photoDeGroupe1"/>
+              <img src="photos/chapeau/chapeau-1grand.jpg" class="photoVignette" alt="photoDeGroupe1"/>
               <div class="textBox">
-                  <p class="textBubble">oki</p>
+                  <p class="textBubble chapeautexte">C'est l'histoire de deux amies qui se baladaient gaiement</p>
               </div>
             </div>
 
             <div class="vignette moyenne">
-              <img src="photos/indiana1moyenne.jpg" class="photoVignette" alt="photoDeGroupe1"/>
+              <img src="photos/chapeau/chapeau-1moyen.jpg" class="photoVignette" alt="photoDeGroupe1"/>
               <div class="textBox">
-                  <p class="textBubble">oki</p>
+                  <p class="textBubble chapeautexte">C'est l'histoire de deux amies qui se baladaient gaiement</p>
               </div>
             </div>
 
             <div class="vignette petite">
-              <img src="photos/indiana1petite.jpg" class="photoVignette" alt="photoDeGroupe1"/>
+              <img src="photos/chapeau/chapeau-1petit.jpg" class="photoVignette" alt="photoDeGroupe1"/>
               <div class="textBox">
-                  <p class="textBubble">oki</p>
+                  <p class="textBubble chapeautexte">C'est l'histoire de deux amies qui se baladaient gaiement</p>
               </div>
             </div>
 
             <div class="vignette">
-              <img src="photos/indianaquevois-je-au-loin.jpg" class="photoVignette" alt="photoDeGroupe1"/>
+              <img src="photos/chapeau/chapeau-2.jpg" class="photoVignette" alt="photoDeGroupe1"/>
               <div class="textBox">
-                  <p class="textBubble">oki</p>
+                  <p class="textBubble chapeautexte">Quand soudain, elles trouverent par terre un étrange haut-de-forme abandonné</p>
               </div>
             </div>
 
             <div class="vignette">
-              <img src="photos/indiana1petite.jpg" class="photoVignette" alt="photoDeGroupe1"/>
+              <img src="photos/chapeau/chapeau-3.jpg" class="photoVignette" alt="photoDeGroupe1"/>
               <div class="textBox">
-                  <p class="textBubble">oki</p>
+                  <p class="textBubble chapeautexte">La plus téméraire (ou stupide) décida de l'essayer</p>
+              </div>
+            </div>
+
+            <div class="vignette">
+              <img src="photos/chapeau/chapeau-4.jpg" class="photoVignette" alt="photoDeGroupe1"/>
+              <div class="textBox">
+                  <p class="textBubble chapeautexte">Mais elle se rendit vite compte qu'elle ne pouvait plus l'enlever</p>
+              </div>
+            </div>
+
+            <div class="vignette">
+              <img src="photos/chapeau/chapeau-5.jpg" class="photoVignette" alt="photoDeGroupe1"/>
+              <div class="textBox">
+                  <p class="textBubble chapeautexte">Le chapeau la possédait désormais...</p>
+              </div>
+            </div>
+
+            <div class="vignette">
+              <img src="photos/chapeau/chapeau-6.jpg" class="photoVignette" alt="photoDeGroupe1"/>
+              <div class="textBox">
+                  <p class="textBubble chapeautexte">Elle fut prise d'une envie de tuer, son amie s'en était bien rendue compte</p>
               </div>
             </div>
 
               <div class="vignette">
-                <img src="photos/indiana1petite.jpg" class="photoVignette" alt="photoDeGroupe1"/>
+                <img src="photos/chapeau/chapeau-7.jpg" class="photoVignette" alt="photoDeGroupe1"/>
                 <div class="textBox">
-                    <p class="textBubble">oki</p>
+                    <p class="textBubble chapeautexte">Elle tenta de fuir, mais il était trop tard.</p>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="chapterBox conclusion">
-            <div class="titres"><h2>conclusion</h2></div>
             <div class="chapter">
               <div class="vignette grande">
                 <img src="photos/indiana1grande.jpg" class="photoVignette" alt="photoDeGroupe1"/>
@@ -344,11 +363,11 @@
 
 
 
-    <footer>
-      <a href="jamil.html"><img src="avatar.jpg" alt="Jamil" /></a>
-      <a href="lauren.html"><img src="avatar.jpg" alt="Laurene" /></a>
-      <a href="alice.html"><img src="avatar.jpg" alt="Alice" /></a>
-      <a href="elise.html"><img src="avatar.jpg" alt="Élise" /></a>
-    </footer>
+        <footer>
+          <a href="jamil.html"><img src="photos/avatars/avatar-jamil.jpg" alt="Jamil" /></a>
+          <a href="lauren.html"><img src="photos/avatars/avatar-laurene.jpg" alt="Laurene" /></a>
+          <a href="alice.html"><img src="photos/avatars/avatar-alice.jpg" alt="Alice" /></a>
+          <a href="elise.html"><img src="photos/avatars/avatar-elise.jpg" alt="Élise" /></a>
+        </footer>
   </body>
 </html>
