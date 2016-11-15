@@ -1,6 +1,10 @@
 @font-face{
   font-family: Karan;
   src: url(fonts/KARAN___.ttf);
+}
+
+@font-face {
+
   font-family: Supermario256;
   src: url(fonts/SuperMario256.ttf);
 }
