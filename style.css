@@ -9,6 +9,21 @@
   src: url(fonts/SuperMario256.ttf);
 }
 
+@font-face {
+
+  font-family: Darklarch;
+  src: url(fonts/DarkLarch.ttf);
+}
+@font-face {
+
+  font-family: Gotcha Gothic Regular;
+  src: url(fonts/GotchaGothicRegular.ttf);
+}
+@font-face {
+
+  font-family: outbox;
+  src: url(fonts/TheOutboxSt.ttf);
+}
 body{
   margin: 0;
 }
@@ -22,7 +37,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: sans-serif;
+  font-family:Arial, sans-serif;
   z-index: 10;
 }
 
@@ -40,6 +55,8 @@ h1 {
   text-align: center;
   background-color:#000;
   color: #000;
+  font-family: Darklarch, Arial, sans-serif;
+  font-size: 40px;
   text-shadow: 2px 2px #FFF, -2px -2px #FFF, -2px 2px #FFF, 2px -2px #FFF;
 }
 
@@ -142,7 +159,7 @@ display: block;
 }
 
 #cycliste{
-  background-image: url(photos/velo.jpg);
+  background-image: url(photos/velo/velo.jpg);
 }
 
 #derrick{
@@ -353,11 +370,22 @@ footer img:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-image: url('photos/velo/path.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.backgroundalice {
+    background-image: url('photos/feuilles.jpg');
+}
+.backgroundelise {
+    background-image: url('photos/background-chapeau.jpg');
+}
+.backgroundjamil {
+    background-image: url('photos/velo/velo.jpg');
+}
+.backgroundlaurene {
+    background-image: url('photos/yeux.jpg');
+}
 .photo {
     width: 35%;
     order: 1;
@@ -374,13 +402,25 @@ footer img:hover {
     flex: 2;
     border: 2px solid black;
     border-radius: 5px;
-    margin: 5px;
+    margin: 5px;,
     display: flex;
     flex-direction: column;
     background: #cedbe9;
+    padding: 5px;
     background: -moz-linear-gradient(-45deg, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
     background: -webkit-linear-gradient(-45deg, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
     background: linear-gradient(135deg, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
+}
+
+.eliseperso {
+  background: rgba(155, 155, 155, 0.9);
+}
+
+.aliceperso {
+  background: rgba(200, 185, 105, 0.8);
+}
+.laureneperso {
+  background: rgba(175, 34, 4, 0.8);
 }
 
 .photo2 {
@@ -393,6 +433,13 @@ footer img:hover {
     color: blue;
     text-shadow: rgb(247, 244, 244) 4px -3px 2px;
     padding: 5px;
+}
+
+.elisenom {
+  font-family: Darklarch;
+  color: #000;
+  font-size: 60px;
+  text-shadow: 2px 2px 2px #FFF;
 }
 
 .listejam {
@@ -411,9 +458,35 @@ footer img:hover {
     text-shadow: rgb(247, 244, 244) 4px -3px 2px;
 }
 
+.elisedetail {
+  font-family: Darklarch, Arial;
+  font-size: 25px;
+  color: #000;
+}
+.alicedetail {
+  font-family: Gotcha Gothic Regular, Arial;
+  font-size: 18px;
+  color: #207305;
+}
+.alicetitre {
+  font-family: Gotcha Gothic Regular, Arial;
+  font-size: 22px;
+  color: #207305;
+}
+.laurenedetail {
+  font-family: outbox, Arial;
+  font-size: 18px;
+  color: #000;
+}
+.laurenetitre {
+  font-family: outbox, Arial;
+  font-size: 22px;
+  color: #000;
+}
 .paraperso {
     font-size: 18px;
     text-align: center;
+    padding: 10px;
 }
 
 
@@ -545,7 +618,7 @@ li.icon4 {
     padding: 5px;
 }
 li.iconelise1 {
-    background: url('photos/icones/brain.png') left no-repeat;
+    background: url('photos/icones/ninja.png') left no-repeat;
     padding: 5px;
 }
 li.iconelise2 {
@@ -558,6 +631,38 @@ li.iconelise3 {
 }
 li.iconelise4 {
     background: url('photos/icones/lazy.png') left no-repeat;
+    padding: 5px;
+}
+li.iconealice1 {
+    background: url('photos/icones/ninja.png') left no-repeat;
+    padding: 5px;
+}
+li.iconealice2 {
+    background: url('photos/icones/archeo.png') left no-repeat;
+    padding: 5px;
+}
+li.iconealice3 {
+    background: url('photos/icones/aventure.png') left no-repeat;
+    padding: 5px;
+}
+li.iconealice4 {
+    background: url('photos/icones/langue.png') left no-repeat;
+    padding: 5px;
+}
+li.iconelaurene1 {
+    background: url('photos/icones/police.png') left no-repeat;
+    padding: 5px;
+}
+li.iconelaurene2 {
+    background: url('photos/icones/obs.png') left no-repeat;
+    padding: 5px;
+}
+li.iconelaurene3 {
+    background: url('photos/icones/arme.png') left no-repeat;
+    padding: 5px;
+}
+li.iconelaurene4 {
+    background: url('photos/icones/langue.png') left no-repeat;
     padding: 5px;
 }
 /* barre d'animation*/
