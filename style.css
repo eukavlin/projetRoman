@@ -141,19 +141,19 @@ display: block;
   border-radius: 10%;
 }
 
-.cycliste{
+#cycliste{
   background-image: url(photos/velo.jpg);
 }
 
-.derrick{
+#derrick{
   background-image: url(photos/yeux.jpg);
 }
 
-.indiana{
+#indiana{
   background-image: url(photos/feuilles.jpg);
 }
 
-.chapeau{
+#chapeau{
   background-image: url(photos/background-chapeau.jpg);
 }
 
