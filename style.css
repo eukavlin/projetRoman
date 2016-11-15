@@ -142,7 +142,7 @@ display: block;
 }
 
 .cycliste{
-  background-image: url(photos/velo.jpg);
+  background-image: url(photos/velo/velo.jpg);
 }
 
 .derrick{
@@ -353,11 +353,22 @@ footer img:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-image: url('photos/velo/path.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.backgroundalice {
+    background-image: url('photos/feuilles.jpg');
+}
+.backgroundelise {
+    background-image: url('photos/background-chapeau.jpg');
+}
+.backgroundjamil {
+    background-image: url('photos/velo/velo.jpg');
+}
+.backgroundlaurene {
+    background-image: url('photos/yeux.jpg');
+}
 .photo {
     width: 35%;
     order: 1;
@@ -414,6 +425,7 @@ footer img:hover {
 .paraperso {
     font-size: 18px;
     text-align: center;
+    padding: 10px;
 }
 
 
@@ -545,7 +557,7 @@ li.icon4 {
     padding: 5px;
 }
 li.iconelise1 {
-    background: url('photos/icones/brain.png') left no-repeat;
+    background: url('photos/icones/ninja.png') left no-repeat;
     padding: 5px;
 }
 li.iconelise2 {
@@ -558,6 +570,38 @@ li.iconelise3 {
 }
 li.iconelise4 {
     background: url('photos/icones/lazy.png') left no-repeat;
+    padding: 5px;
+}
+li.iconealice1 {
+    background: url('photos/icones/ninja.png') left no-repeat;
+    padding: 5px;
+}
+li.iconealice2 {
+    background: url('photos/icones/archeo.png') left no-repeat;
+    padding: 5px;
+}
+li.iconealice3 {
+    background: url('photos/icones/aventure.png') left no-repeat;
+    padding: 5px;
+}
+li.iconealice4 {
+    background: url('photos/icones/langue.png') left no-repeat;
+    padding: 5px;
+}
+li.iconelaurene1 {
+    background: url('photos/icones/police.png') left no-repeat;
+    padding: 5px;
+}
+li.iconelaurene2 {
+    background: url('photos/icones/obs.png') left no-repeat;
+    padding: 5px;
+}
+li.iconelaurene3 {
+    background: url('photos/icones/arme.png') left no-repeat;
+    padding: 5px;
+}
+li.iconelaurene4 {
+    background: url('photos/icones/langue.png') left no-repeat;
     padding: 5px;
 }
 /* barre d'animation*/
