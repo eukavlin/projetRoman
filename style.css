@@ -35,6 +35,8 @@ h1 {
   margin: 0;
   text-align: center;
   background-color:#000;
+  color: #000;
+  text-shadow: 2px 2px #FFF, -2px -2px #FFF, -2px 2px #FFF, 2px -2px #FFF;
 }
 
 header ul {
@@ -114,21 +116,21 @@ display: block;
   font-family: Karan;
 }
 
-.titres, .theEnd{
+.chapterBox.introduction{
+  padding-top: 2%;
+}
+
+.theEnd{
   display: flex;
   padding: 2%;
   justify-content: flex-end;
-}
-
-.titres h2{
-  margin: auto;
 }
 
 .introduction, .conclusion{
   background-image: url(photos/fond-informatique-vert.jpg);
 }
 
-.introduction h2, .conclusion h2, .theEnd h3{
+.theEnd h3{
   background-color: black;
   color: lightgreen;
   border:2px solid lightgreen;
@@ -139,44 +141,16 @@ display: block;
   background-image: url(photos/velo.jpg);
 }
 
-.cycliste h2{
-  background-color: white;
-  color: blue;
-  border:2px solid blue;
-  border-radius: 10%;
-}
-
 .derrick{
   background-image: url(photos/yeux.jpg);
-}
-
-.derrick h2{
-  background-color: lightyellow;
-  color: darkred;
-  border:2px solid darkred;
-  border-radius: 10%;
 }
 
 .indiana{
   background-image: url(photos/feuilles.jpg);
 }
 
-.indiana h2{
-  background-color: beige;
-  color: darkgreen;
-  border:2px solid darkgreen;
-  border-radius: 10%;
-}
-
 .chapeau{
   background-image: url(photos/background-chapeau.jpg);
-}
-
-.chapeaum h2{
-  background-color: black;
-  color: white;
-  border:2px solid white;
-  border-radius: 10%;
 }
 
 .chapter{
@@ -187,7 +161,16 @@ display: block;
   align-content: space-around;
   flex-wrap: wrap;
   background-color: white;
-  border-radius: 1.5%;
+}
+
+.introduction .chapter{
+  border-top-left-radius: 1.5%;
+  border-top-right-radius: 1.5%;
+}
+
+.conclusion .chapter{
+  border-bottom-left-radius: 1.5%;
+  border-bottom-right-radius: 1.5%;
 }
 
 .vignette{
@@ -237,13 +220,30 @@ p.textBubble{
   font-size: 1.1vw;
   font-weight: bold;
   margin: auto;
-  padding: 15px;
-  border-radius: 50%;
   letter-spacing: -0.1vw;
   border: 2px solid black;
-  background-color: white;
   word-wrap: normal;
   text-align: center;
+}
+
+.round{
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.square{
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.white{
+  background-color: white;
+  color: black;
+}
+
+.black{
+  background-color: #000;
+  color:#FFF;
 }
 
 .topRight{
@@ -273,10 +273,6 @@ p.textBubble{
 p.introduction  , p.conclusion, p.liaison{
   background-color: rgba(255, 255, 255, 0.5);
   color: black;
-}
-
-p.cycliste {
-  background-color: #a4e7ff;
 }
 
 p.chapeautexte{
@@ -431,9 +427,71 @@ footer img:hover {
 .h3perso {
     font-family: 'SuperMario256', arial, serif;
     color: black;
-    font-size: 15px;
     position: absolute;
     top: -23px;
+    font-size: 20px;
+    text-shadow: #f7f4f4 4px -3px 2px;
+}
+
+@media screen and (max-width: 1024px) {
+    .fiche-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo {
+        display: none;
+    }
+    .photo2 {
+        order: 1;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-bottom: 2px;
+        box-sizing: border-box;
+        align-items: center;
+        align-self: center;
+        flex: 1;
+        display: flex;
+    }
+    .texte {
+        order: 2;
+        flex: 1 0 auto;
+        align-self: stretch;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    .fiche-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo {
+        display: none;
+    }
+    .photo2 {
+        display: flex;
+        order: 1;
+        border: 2px solid black;
+        border-radius: 5px;
+        box-sizing: border-box;
+        align-items: center;
+        align-self: center;
+        flex: 1;
+    }
+    .texte {
+        order: 2;
+        flex: 1 0 auto;
+        align-self: stretch;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        border: 0;
+    }
 }
 /*css barre de progression*/
 
