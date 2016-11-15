@@ -14,7 +14,16 @@
   font-family: Darklarch;
   src: url(fonts/DarkLarch.ttf);
 }
+@font-face {
 
+  font-family: Gotcha Gothic Regular;
+  src: url(fonts/GotchaGothicRegular.ttf);
+}
+@font-face {
+
+  font-family: outbox;
+  src: url(fonts/TheOutboxSt.ttf);
+}
 body{
   margin: 0;
 }
@@ -407,6 +416,13 @@ footer img:hover {
   background: rgba(155, 155, 155, 0.9);
 }
 
+.aliceperso {
+  background: rgba(200, 185, 105, 0.8);
+}
+.laureneperso {
+  background: rgba(175, 34, 4, 0.8);
+}
+
 .photo2 {
     display: none;
 }
@@ -447,7 +463,26 @@ footer img:hover {
   font-size: 25px;
   color: #000;
 }
-
+.alicedetail {
+  font-family: Gotcha Gothic Regular, Arial;
+  font-size: 18px;
+  color: #207305;
+}
+.alicetitre {
+  font-family: Gotcha Gothic Regular, Arial;
+  font-size: 22px;
+  color: #207305;
+}
+.laurenedetail {
+  font-family: outbox, Arial;
+  font-size: 18px;
+  color: #000;
+}
+.laurenetitre {
+  font-family: outbox, Arial;
+  font-size: 22px;
+  color: #000;
+}
 .paraperso {
     font-size: 18px;
     text-align: center;
