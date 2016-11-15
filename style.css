@@ -270,17 +270,6 @@ p.textBubble{
   left: 0;
 }
 
-p.introduction  , p.conclusion, p.liaison{
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
-}
-
-p.chapeautexte{
-  background-color: #000;
-  color:#FFF;
-  border-radius: 5px;
-}
-
 
 /*footer*/
 footer {
