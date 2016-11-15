@@ -1,6 +1,8 @@
 @font-face{
   font-family: Karan;
   src: url(fonts/KARAN___.ttf);
+  font-family: Supermario256;
+  src: url(fonts/SuperMario256.ttf);
 }
 
 body{
@@ -14,25 +16,20 @@ header{
   background-color: #000;
   color: #FFF;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   font-family: sans-serif;
+  z-index: 10;
 }
 
-header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align:center;
-  z-index: 3;
-}
-
-header ul li {
-  z-index: 2;
+header .menu-home {
+  padding: 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #FFF;
 }
 
 h1 {
-  position: absolute;
-  width: auto;
   box-sizing: border-box;
   padding: 5px;
   margin: 0;
@@ -40,16 +37,20 @@ h1 {
   background-color:#000;
 }
 
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align:center;
+}
+
 header ul li p{
-  position: relative;
-  left: 0;
+  right: 0;
   margin: 0;
   box-sizing: border-box;
   padding: 20px;
   width: 50px;
-  text-align: left;
-  -webkit-transition: width 0.1s;
-  transition: width 0.1s;
+  text-align: right;
 }
 
 header ul li a {
@@ -58,20 +59,18 @@ header ul li a {
   font-size: 24px;
 }
 
-header ul li ul {
+header ul li ul{
   display: none;
   padding: 0;
   margin: 0;
+  z-index: 10;
 }
 
-header ul li:hover {
- width: 200px;
-}
-
-header ul li:hover ul {
+header ul li:hover ul{
   display: block;
   position: absolute;
-  left: 0;
+  top: 50px;
+  right: 0;
   width: 200px;
   border: 1px solid #000;
   background-color: #000;
@@ -87,17 +86,20 @@ header li:hover ul li {
    font-size: 16px;
  }
 
- header li ul a:hover li {
+ header li ul a:hover li, .sousmenu:hover, li.sousmenu:hover ul.leveltwo li:hover{
    font-weight: bold;
  }
 
+ li.sousmenu ul.leveltwo li  {
+   display: none;
+   font-weight: normal;
+   z-index: 10;
+ }
 
-h4 {
-  margin: 0;
-  font-size: 19px;
-  color: #000;
-  background-color: #FFF;
-}
+ li.sousmenu:hover ul.leveltwo li{
+display: block;
+
+ }
 
 /*Container*/
 
@@ -105,6 +107,7 @@ h4 {
   width: 100%;
   height: auto;
 }
+
 
 .chapterBox{
   width: 100%;
@@ -166,10 +169,10 @@ h4 {
 }
 
 .chapeau{
-  background-image: url(photos/noir-et-blanc.png);
+  background-image: url(photos/background-chapeau.jpg);
 }
 
-.chapeau h2{
+.chapeaum h2{
   background-color: black;
   color: white;
   border:2px solid white;
@@ -272,13 +275,20 @@ p.introduction  , p.conclusion, p.liaison{
   color: black;
 }
 
-p.cycliste{
-  background-color:
+p.cycliste {
+  background-color: #a4e7ff;
+}
+
+p.chapeautexte{
+  background-color: #000;
+  color:#FFF;
+  border-radius: 5px;
 }
 
 
 /*footer*/
 footer {
+  padding: relative;
   padding: 1%;
   box-sizing: border-box;
   background-color: #000;
@@ -294,7 +304,7 @@ footer img {
 }
 
 footer img:hover {
-  /*opacity: 0.9;*/
+  opacity: 0.7;
   transform: scale(1.3);
   transition: transform 0.5s ease-in-out;
 }
@@ -346,4 +356,334 @@ footer img:hover {
   p.textBubble{
     font-size: 2.8vw;
   }
+}
+
+/*Fiches persos*/
+.fiche-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url('photos/velo/path.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo {
+    width: 35%;
+    order: 1;
+    flex: 1;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+
+.texte {
+    width: 75%;
+    order: 2;
+    flex: 2;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    background: #cedbe9;
+    background: -moz-linear-gradient(-45deg, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
+    background: -webkit-linear-gradient(-45deg, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
+    background: linear-gradient(135deg, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
+}
+
+.photo2 {
+    display: none;
+}
+
+.prenom {
+    font-family: 'SuperMario256';
+    font-size: 25px;
+    color: blue;
+    text-shadow: rgb(247, 244, 244) 4px -3px 2px;
+    padding: 5px;
+}
+
+.listejam {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    text-align: center;
+}
+
+.spanperso {
+    font-family: 'SuperMario256', arial, serif;
+    color: red;
+    text-shadow: rgb(247, 244, 244) 4px -3px 2px;
+}
+
+.paraperso {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.h3perso {
+    font-family: 'SuperMario256', arial, serif;
+    color: black;
+    font-size: 15px;
+    position: absolute;
+    top: -23px;
+}
+/*css barre de progression*/
+
+.skill {
+    list-style: none;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    line-height: 2em;
+
+
+}
+
+.skill li {
+    margin:25px 0 25px 0;
+    height: 20px;
+    border-radius: 10px;
+    border-color: black solid 1px;
+    -moz-box-shadow: 0 1px 0px #bbbdb9 inset, 0 1px 0 #bebbb9;
+    -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #bebbb9;
+    box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #bebbb9;
+}
+
+.skill li h3 {
+    position: relative;
+    top: -50px;
+}
+
+.bar {
+    height: 18px;
+    margin: 1px 2px;
+    position: absolute;
+    left: 50px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+    -webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+    box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+    width: 10%;
+}
+
+.icon {
+  width: 100%;
+}
+
+li.icon1 {
+    background: url('photos/icones/ninja.png') left no-repeat;
+    padding: 5px;
+    position: relative;
+}
+
+li.icon2 {
+    background: url('photos/icones/energy.png') left no-repeat;
+    padding: 5px;
+}
+
+li.icon3 {
+    background: url('photos/icones/speed.png') left no-repeat;
+    padding: 5px;
+}
+
+li.icon4 {
+    background: url('photos/icones/brain.png') left no-repeat;
+    padding: 5px;
+}
+/* barre d'animation*/
+.furtif {
+    width: 63%;
+    -moz-animation: furtif 2s ease-out;
+    -webkit-animation: furtif 2s ease-out;
+    background-color: #f74c35;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f74c35), to(#f7260a));
+    background-image: -webkit-linear-gradient(top, #f74c35, #f7260a);
+    background-image: -moz-linear-gradient(top, #f74c35, #f7260a);
+    background-image: -ms-linear-gradient(top, #f74c35, #f7260a);
+    background-image: -o-linear-gradient(top, #f74c35, #f7260a);
+    background-image: linear-gradient(top, #f74c35, #f7260a);
+}
+
+.mana {
+    width: 68%;
+    -moz-animation: mana 2s ease-out;
+    -webkit-animation: mana 2s ease-out;
+    background-color: #f0bb4b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
+    background-image: -webkit-linear-gradient(top, #f0bb4b, #d9aa44);
+    background-image: -moz-linear-gradient(top, #f0bb4b, #d9aa44);
+    background-image: -ms-linear-gradient(top, #f0bb4b, #d9aa44);
+    background-image: -o-linear-gradient(top, #f0bb4b, #d9aa44);
+    background-image: linear-gradient(top, #f0bb4b, #d9aa44);
+}
+
+.acc {
+    width: 65%;
+    -moz-animation: acc 2s ease-out;
+    -webkit-animation: acc 2s ease-out;
+    background-color: #a1ce5b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
+    background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
+    background-image: linear-gradient(top, #a1ce5b, #91ba52);
+}
+
+.attaque {
+    width: 70%;
+    -moz-animation: attaque 2s ease-out;
+    -webkit-animation: attaque 2s ease-out;
+    background-color: #66b3cc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+    background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+    background-image: linear-gradient(top, #66b3cc, #5da3ba)
+}
+
+/*key frame barre d'animation*/
+@-moz-keyframes furtif {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 63%;
+    }
+}
+
+@-moz-keyframes mana {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 68%;
+    }
+}
+
+@-moz-keyframes acc {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+@-moz-keyframes attaque {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@-webkit-keyframes furtif {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 63%;
+    }
+}
+
+@-webkit-keyframes mana {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 68%;
+    }
+}
+
+@-webkit-keyframes acc {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 65%;
+    }
+}
+
+@-webkit-keyframes attaque {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+/*media queries jamil*/
+@media screen and (max-width: 1024px) {
+    .fiche-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo {
+        display: none;
+    }
+    .photo2 {
+        order: 1;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-bottom: 2px;
+        box-sizing: border-box;
+        align-items: center;
+        align-self: center;
+        flex: 1;
+        display: flex;
+        width: 60%;
+    }
+    .texte {
+        order: 2;
+        flex: 1 0 auto;
+        align-self: stretch;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .fiche-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo {
+        display: none;
+    }
+    .photo2 {
+        display: flex;
+        order: 1;
+        border: 2px solid black;
+        border-radius: 5px;
+        box-sizing: border-box;
+        align-items: center;
+        align-self: center;
+        flex: 1;
+        width: 60%;
+    }
+    .texte {
+        order: 2;
+        flex: 1 0 auto;
+        align-self: stretch;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        border: 0;
+    }
 }
