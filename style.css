@@ -9,6 +9,12 @@
   src: url(fonts/SuperMario256.ttf);
 }
 
+@font-face {
+
+  font-family: Darklarch;
+  src: url(fonts/DarkLarch.ttf);
+}
+
 body{
   margin: 0;
 }
@@ -22,7 +28,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: sans-serif;
+  font-family:Arial, sans-serif;
   z-index: 10;
 }
 
@@ -40,6 +46,8 @@ h1 {
   text-align: center;
   background-color:#000;
   color: #000;
+  font-family: Darklarch, Arial, sans-serif;
+  font-size: 40px;
   text-shadow: 2px 2px #FFF, -2px -2px #FFF, -2px 2px #FFF, 2px -2px #FFF;
 }
 
@@ -385,13 +393,18 @@ footer img:hover {
     flex: 2;
     border: 2px solid black;
     border-radius: 5px;
-    margin: 5px;
+    margin: 5px;,
     display: flex;
     flex-direction: column;
     background: #cedbe9;
+    padding: 5px;
     background: -moz-linear-gradient(-45deg, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
     background: -webkit-linear-gradient(-45deg, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
     background: linear-gradient(135deg, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
+}
+
+.eliseperso {
+  background: rgba(155, 155, 155, 0.8);
 }
 
 .photo2 {
@@ -404,6 +417,13 @@ footer img:hover {
     color: blue;
     text-shadow: rgb(247, 244, 244) 4px -3px 2px;
     padding: 5px;
+}
+
+.elisenom {
+  font-family: Darklarch;
+  color: #000;
+  font-size: 60px;
+  text-shadow: 2px 2px 2px #FFF;
 }
 
 .listejam {
@@ -420,6 +440,12 @@ footer img:hover {
     font-family: 'SuperMario256', arial, serif;
     color: red;
     text-shadow: rgb(247, 244, 244) 4px -3px 2px;
+}
+
+.elisedetail {
+  font-family: Darklarch, Arial;
+  font-size: 25px;
+  color: #000;
 }
 
 .paraperso {
