@@ -420,8 +420,8 @@ footer img:hover {
 .h3perso {
     font-family: 'SuperMario256', arial, serif;
     color: black;
-    position: absolute;
-    top: -23px;
+    position: relative;
+    top: -60px;
     font-size: 20px;
     text-shadow: #f7f4f4 4px -3px 2px;
 }
@@ -508,11 +508,6 @@ footer img:hover {
     box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #bebbb9;
 }
 
-.skill li h3 {
-    position: relative;
-    top: -50px;
-}
-
 .bar {
     height: 18px;
     margin: 1px 2px;
@@ -547,6 +542,22 @@ li.icon3 {
 
 li.icon4 {
     background: url('photos/icones/brain.png') left no-repeat;
+    padding: 5px;
+}
+li.iconelise1 {
+    background: url('photos/icones/brain.png') left no-repeat;
+    padding: 5px;
+}
+li.iconelise2 {
+    background: url('photos/icones/psy.png') left no-repeat;
+    padding: 5px;
+}
+li.iconelise3 {
+    background: url('photos/icones/library.png') left no-repeat;
+    padding: 5px;
+}
+li.iconelise4 {
+    background: url('photos/icones/lazy.png') left no-repeat;
     padding: 5px;
 }
 /* barre d'animation*/
