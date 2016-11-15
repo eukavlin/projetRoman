@@ -446,7 +446,7 @@ h3 {
     }
 }
 
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 640px) {
     .fiche-container {
         width: 100%;
         display: flex;
