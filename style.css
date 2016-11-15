@@ -196,6 +196,174 @@ footer img:hover {
   transition: transform 0.5s ease-in-out;
 }
 
+
+
+
+/* ------------------------------------- Moi                   */
+
+/* Fonts */
+
+@font-face {
+  font-family: Karan;
+  src: url(fonts/KARAN___.ttf);
+}
+
+/* Reset User Agent */
+
+button {
+  border-width: 0px;
+}
+
+/* General Styles */
+
+body{
+  margin: 0;
+}
+
+footer {
+  padding:  2%;
+  box-sizing: border-box;
+  background-color: #000;
+  line-height: auto;
+  text-align: center;
+}
+
+footer img {
+  padding: 0% 5%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+footer img:hover {
+  /*opacity: 0.9;*/
+  transform: scale(1.5);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Structure Roman Photo Alice */
+
+.container.roman{
+  margin: auto;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chapter{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+
+.vignette{
+  width: 32%;
+  height: auto;
+  position: relative;
+  font-family: Karan;
+  font-size: 100%;
+  margin: 1vw 0;
+  box-sizing: border-box;
+}
+
+img.photoVignette{
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+  z-index: 0;
+}
+
+.vignette img.photoVignette + .textBox{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.textBox{
+  width: 100%;
+  height: 100%;
+  border: 3px solid black;
+  border-radius: 2%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+p.textBubble{
+  background-color: rgba(95, 0, 0, 0.5);
+  display: inline-block;
+  margin: auto;
+  padding: 3px;
+  border-radius: 10%;
+  letter-spacing: -0.1vw;
+}
+
+/* Structure for Intro Page Laurene */
+
+main {
+  position:relative;
+  margin: 5% auto;
+  max-width: 1400px;
+  height:60vh;
+  background: url('photos/intro.jpg');
+  background-size: cover;
+}
+
+#intro {
+  position: absolute;
+  bottom:0;
+  background: rgba(222, 222, 222, 0.7);
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+button {
+  float: right;
+  padding:2%;
+  background: grey;
+  color:white;
+  font-weight:bold;
+  border 2px solid white;
+  border-radius: 0 50px;
+  transition-duration:2s;
+}
+
+button:hover {
+  background:white;
+  color: grey;
+  border: grey;
+
+}
+
+button a{
+  color:white;
+  text-decoration: none;
+}
+
+button a:hover{
+  color:grey;
+  transform: scale(1.5);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px){
+  .vignette{
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .container.roman{
+    width: 100%;
+  }
+
+  .vignette{
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1024px){
   .vignette{
     width: 48.5%;
