@@ -112,21 +112,21 @@ display: block;
   font-family: Karan;
 }
 
-.titres, .theEnd{
+.chapterBox.introduction{
+  padding-top: 2%;
+}
+
+.theEnd{
   display: flex;
   padding: 2%;
   justify-content: flex-end;
-}
-
-.titres h2{
-  margin: auto;
 }
 
 .introduction, .conclusion{
   background-image: url(photos/fond-informatique-vert.jpg);
 }
 
-.introduction h2, .conclusion h2, .theEnd h3{
+.theEnd h3{
   background-color: black;
   color: lightgreen;
   border:2px solid lightgreen;
@@ -137,44 +137,16 @@ display: block;
   background-image: url(photos/velo.jpg);
 }
 
-.cycliste h2{
-  background-color: white;
-  color: blue;
-  border:2px solid blue;
-  border-radius: 10%;
-}
-
 .derrick{
   background-image: url(photos/yeux.jpg);
-}
-
-.derrick h2{
-  background-color: lightyellow;
-  color: darkred;
-  border:2px solid darkred;
-  border-radius: 10%;
 }
 
 .indiana{
   background-image: url(photos/feuilles.jpg);
 }
 
-.indiana h2{
-  background-color: beige;
-  color: darkgreen;
-  border:2px solid darkgreen;
-  border-radius: 10%;
-}
-
 .chapeau{
   background-image: url(photos/background-chapeau.jpg);
-}
-
-.chapeaum h2{
-  background-color: black;
-  color: white;
-  border:2px solid white;
-  border-radius: 10%;
 }
 
 .chapter{
@@ -185,7 +157,16 @@ display: block;
   align-content: space-around;
   flex-wrap: wrap;
   background-color: white;
-  border-radius: 1.5%;
+}
+
+.introduction .chapter{
+  border-top-left-radius: 1.5%;
+  border-top-right-radius: 1.5%;
+}
+
+.conclusion .chapter{
+  border-bottom-left-radius: 1.5%;
+  border-bottom-right-radius: 1.5%;
 }
 
 .vignette{
@@ -235,13 +216,30 @@ p.textBubble{
   font-size: 1.1vw;
   font-weight: bold;
   margin: auto;
-  padding: 15px;
-  border-radius: 50%;
   letter-spacing: -0.1vw;
   border: 2px solid black;
-  background-color: white;
   word-wrap: normal;
   text-align: center;
+}
+
+.round{
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.square{
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.white{
+  background-color: white;
+  color: black;
+}
+
+.black{
+  background-color: #000;
+  color:#FFF;
 }
 
 .topRight{
@@ -266,21 +264,6 @@ p.textBubble{
   position: absolute;
   bottom: 0;
   left: 0;
-}
-
-p.introduction  , p.conclusion, p.liaison{
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
-}
-
-p.cycliste{
-  background-color:
-}
-
-p.chapeautexte{
-  background-color: #000;
-  color:#FFF;
-  border-radius: 5px;
 }
 
 
