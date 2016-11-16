@@ -4,34 +4,72 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" media="screen" title="no title">
-    <title>Accueil</title>
+    <link rel="stylesheet" href="fonts/fontello/css/fontello.css">
+    <title>Roman-Photo - Accueil</title>
   </head>
   <body>
-    <header>
-      <a href="index.html" class="menu-home">home</a>
-      <h1>the project</h1>
+<header>
+  <a href="index.html" class="anchor" id="home">
+    <span class="icon-home" aria-hidden="true"></span>
+    <span class="visuallyhidden">Retour à l'accueil</span>
+  </a>
+
+  <h1>The Project</h1>
+  <ul>
+    <li><a href="#"><p>☰</p></a>
       <ul>
-        <li><a href="#"><p>☰</p></a>
-          <ul>
-            <a href="roman.html"><li class="levelone">Roman-Photo</li></a>
-            <li  class=" levelone sousmenu">Personnages
-              <ul class="leveltwo">
-                <a href="jamil.html"><li>Jamil</li></a>
-                <a href="lauren.html"><li>Laurene</li></a>
-                <a href="alice.html"><li>Alice</li></a>
-                <a href="elise.html"><li>Élise</li></a>
-              </ul></li>
-            </li>
-          </ul>
+        <a href="roman.html"><li class="levelone">Roman-Photo</li></a>
+        <li  class=" levelone sousmenu">Personnages
+          <ul class="leveltwo">
+            <a href="jamil.html"><li>Jamil</li></a>
+            <a href="lauren.html"><li>Laurene</li></a>
+            <a href="alice.html"><li>Alice</li></a>
+            <a href="elise.html"><li>Élise</li></a>
+          </ul></li>
         </li>
       </ul>
-    </header>
+    </li>
+  </ul>
+</header>
+<main>
+    <div id="front">
+      <h2> Le mot de l'équipe</h2>
+      <p>Ecole SIMPLonMars - Mercredi 2 Novembre 2016 - 16h
+      <br/> 4 étudiants
+      <br/> Réuni autour d'un même projet
+      <br/>Le Roman Photo ...
+      <br/>Que va-t-il se passer ? </p>
+      <button><a href="roman.html">Rejoins l'aventure </a></button>
 
+    </div>
+</main>
+
+<aside>
+  <h2> Sommaire </h2>
+    <ul>
+      <li id="bgintro"><a href="roman.html#intro"><h3>Introduction</h3></a></li>
+      <li id="bgcycliste"><a href="roman.html#cycliste"><h3>La course de vélo</h3></a></li>
+      <li id="bgderrick"><a href="roman.html#derrick"><h3>Inspectrice Béatrice</h3></a></li>
+      <li id="bgindiana"><a href="roman.html#indiana"><h3>La Cité Maudite</h3></a></li>
+      <li id="bgchapeau"><a href="roman.html#chapeau"><h3>Le Chapeau Maléfique</h3></a></li>
+      <li id="bgfinal"><a href="roman.html#final"><h3>Final</h3></a></li>
+    </ul>
+</aside>
+  <div class="containeranchor" >
+    <a href="#" class="anchor" id="chapter">
+      <span class="icon-down-open" aria-hidden="true"></span>
+      <span class="visuallyhidden">Ancre</span>
+    </a>
+  </div>
     <footer>
       <a href="jamil.html"><img src="photos/avatars/avatar-jamil.jpg" alt="Jamil" /></a>
       <a href="lauren.html"><img src="photos/avatars/avatar-laurene.jpg" alt="Laurene" /></a>
       <a href="alice.html"><img src="photos/avatars/avatar-alice.jpg" alt="Alice" /></a>
       <a href="elise.html"><img src="photos/avatars/avatar-elise.jpg" alt="Élise" /></a>
+      <a href="#" class="anchor" id="gotop">
+        <span class="icon-up-open" aria-hidden="true"></span>
+        <span class="visuallyhidden">Haut de Page</span>
+      </a>
     </footer>
   </body>
 </html>
