@@ -3,6 +3,18 @@
   src: url(fonts/KARAN___.ttf);
 }
 
+@font-face {
+  font-family: 'fontello';
+  src: url('fonts/fontello/font/fontello.eot?5583530');
+  src: url('fonts/fontello/font/fontello.eot?5583530#iefix') format('embedded-opentype'),
+       url('fonts/fontello/font/fontello.woff2?5583530') format('woff2'),
+       url('fonts/fontello/font/fontello.woff?5583530') format('woff'),
+       url('fonts/fontello/font/fontello.ttf?5583530') format('truetype'),
+       url('fonts/fontello/font/fontello.svg?5583530#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
   margin: 0;
 }
@@ -271,7 +283,7 @@ p.textBubble{
 
 /*footer*/
 footer {
-  padding: relative;
+  position: relative;
   padding: 1%;
   box-sizing: border-box;
   background-color: #000;
@@ -655,4 +667,190 @@ li.icon4 {
     100% {
         width: 70%;
     }
+}
+
+
+
+/* Structure for Intro Page Laurene */
+
+main {
+  position:relative;
+  margin: 5% auto;
+  max-width: 80%;
+  height:80vh;
+  background: url('photos/intro2.jpg');
+  background-size: cover;
+}
+
+
+#front {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+  background: rgba(222, 222, 222, 0.7);
+  padding: 2%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+button {
+  float: right;
+  padding:2%;
+  background: grey;
+  color:white;
+  font-weight:bold;
+  border 2px solid white;
+  border-radius: 0 50px;
+  transition-duration:2s;
+}
+
+button:hover {
+  background:white;
+  color: grey;
+  border: grey;
+
+}
+
+button a{
+  color:white;
+  text-decoration: none;
+}
+
+button a:hover{
+  color:grey;
+  transform: scale(1.5);
+}
+
+/* Summary Styles */
+
+aside {
+  margin:5% auto;
+  display: flex;
+  justify-content: space-around;;
+  align-items: center;
+  width:50%;
+}
+
+aside ul{
+  font-size: xx-large;
+}
+
+aside li {
+  padding:2%;
+  line-height: 50px;
+  max-height:60px;
+  box-sizing: border-box;
+}
+
+aside a {
+  text-decoration: none;
+  color:black;
+
+}
+
+aside h3 {
+  margin:0;
+  font-size:50px;
+}
+
+
+#bgintro a h3 , #bgindiana a h3, #bgfinal a h3{
+  color:white;
+  text-shadow: none;
+}
+
+#bgintro {
+  background: url('photos/fond-informatique-vert.jpg');
+  color:white;
+}
+
+#bgcycliste {
+  background: url('photos/velo.jpg');
+}
+
+#bgderrick {
+  background: url('photos/yeux.jpg');
+}
+
+#bgindiana {
+  background: url('photos/feuilles.jpg');
+}
+
+#bgchapeau {
+  background: url('photos/background-chapeau.jpg');
+  color:red;
+}
+
+#bgchapeau a h3{
+  color:red;
+}
+#bgderrick a h3{
+color:#62300F
+}
+#bgfinal {
+  background: url('photos/fond-informatique-bleu.jpg');
+  color:white;
+}
+
+/* Anchor CSS Styles */
+
+.containeranchor {
+  position:relative;
+  display:flex;
+  width:100%;
+  min-height: 50px;
+  background: url('photos/fond.jpg');
+}
+
+.anchor {
+
+  font-size:2em;
+}
+
+
+#chapter {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#gotop {
+	position:absolute;
+	bottom:0.5em;
+	right:1em;
+	font-weight:bold;
+	font-size:2em;
+	color:pink;
+}
+
+/* Helper Classes */
+
+/* Reset User Agent */
+
+button {
+  border-width: 0px;
+}
+
+
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
 }
