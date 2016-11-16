@@ -148,13 +148,13 @@ display: block;
 }
 
 .introduction, .conclusion{
-  background-image: url(photos/fond-informatique-vert.jpg);
+  background-image: url(photos/fond-informatique-bleu.jpg);
 }
 
 .theEnd h3{
   background-color: black;
-  color: lightgreen;
-  border:2px solid lightgreen;
+  color: lightblue;
+  border:2px solid lightblue;
   border-radius: 10%;
 }
 
