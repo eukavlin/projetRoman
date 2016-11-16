@@ -697,7 +697,6 @@ main {
 
 button {
   float: right;
-  padding:2%;
   background: grey;
   color:white;
   font-weight:bold;
@@ -714,8 +713,11 @@ button:hover {
 }
 
 button a{
-  color:white;
+  padding: 20%;
+  color: white;
   text-decoration: none;
+  font-size: 20px;
+  line-height: 100px;
 }
 
 button a:hover{
