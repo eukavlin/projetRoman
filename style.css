@@ -14,6 +14,10 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: OldStamper;
+  src: url(fonts/old_stamper.ttf);
+}
 
 @font-face{
   font-family: Supermario256;
@@ -49,7 +53,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family:Arial, sans-serif;
+  font-family: Arial, sans-serif;
   z-index: 10;
 }
 
@@ -67,7 +71,7 @@ h1 {
   text-align: center;
   background-color:#000;
   color: #000;
-  font-family: Darklarch, Arial, sans-serif;
+  font-family: OldStamper, Arial, sans-serif;
   font-size: 40px;
   text-shadow: 2px 2px #FFF, -2px -2px #FFF, -2px 2px #FFF, 2px -2px #FFF;
 }
