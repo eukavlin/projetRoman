@@ -965,7 +965,7 @@ aside a {
 
 aside h3 {
   margin:0;
-  font-size:50px;
+  font-size:30px;
 }
 
 
@@ -974,8 +974,12 @@ aside h3 {
   text-shadow: none;
 }
 
+#bgcycliste a h3{
+  color: red;
+}
+
 #bgintro {
-  background: url('photos/fond-informatique-vert.jpg');
+  background: url('photos/fond-informatique-bleu.jpg');
   color:white;
 }
 
@@ -1000,7 +1004,7 @@ aside h3 {
   color:red;
 }
 #bgderrick a h3{
-color:#62300F
+  color: black;
 }
 #bgfinal {
   background: url('photos/fond-informatique-bleu.jpg');
@@ -1017,8 +1021,7 @@ color:#62300F
   background: url('photos/fond.jpg');
 }
 
-.anchor {
-
+.anchor{
   font-size:2em;
 }
 
