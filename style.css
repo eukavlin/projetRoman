@@ -133,6 +133,7 @@ header {
 }
 
 .titlecenter {
+    font-size: 40px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 5px;
@@ -142,7 +143,6 @@ header {
     background-color: #000;
     color: #000;
     font-family: OldStamper, Arial, sans-serif;
-    font-size: 40px;
     text-shadow: 2px 2px #FFF, -2px -2px #FFF, -2px 2px #FFF, 2px -2px #FFF;
 }
 
@@ -465,6 +465,10 @@ footer .icon.icon-arrow-up {
         font-size: 1.8vw;
     }
 
+    .titlecenter {
+        font-size: 35px;
+      }
+
     .frontpage{
       font-size: 2vw;
     }
@@ -499,6 +503,10 @@ footer .icon.icon-arrow-up {
     p.textBubble {
         font-size: 2.8vw;
     }
+
+    .titlecenter {
+        font-size: 30px;
+      }
 
     .menuromper {
       display: none;
