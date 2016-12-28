@@ -190,7 +190,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.3em;
+  font-size: 1.4vw;
 }
 
 .jumbotron {
@@ -233,7 +233,7 @@ header {
 .jumbotron button a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 .jumbotron button a:hover {
@@ -462,6 +462,14 @@ footer .icon.icon-arrow-up {
         font-size: 1.8vw;
     }
 
+    .frontpage{
+      font-size: 2vw;
+    }
+
+    .frontpage button a{
+      font-size: 3vw;
+    }
+
     footer img {
         padding: 0 2vw;
         height: 8.5vh;
@@ -491,6 +499,13 @@ footer .icon.icon-arrow-up {
 
     .menuromper {
       display: none;
+    }
+
+    .frontpage {
+      font-size: 3vw;
+    }
+    .frontpage button a{
+      font-size: 5vw;
     }
 
     footer img {
