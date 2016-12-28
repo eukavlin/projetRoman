@@ -223,12 +223,11 @@ header {
     font-weight: bold;
     padding: 20px 50px;
     transition-duration: 2s;
+    border-radius: 5px;
 }
 
 .jumbotron button:hover {
-    background: white;
-    color: grey;
-    border: grey;
+    color: #AAA;
 }
 
 .jumbotron button a {
@@ -239,7 +238,7 @@ header {
 
 .jumbotron button a:hover {
     color: grey;
-    transform: scale(1.5);
+    text-decoration: none;
 }
 
 /*Container*/
