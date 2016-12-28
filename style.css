@@ -104,6 +104,7 @@ header {
     width: 100%;
     background-color: #000;
     color: #FFF;
+    height: 7vh;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     z-index: 99;
@@ -160,7 +161,7 @@ header {
 }
 
 .romanperso ul li:hover {
-  color: #AAA;
+  color: #888;
   transition: color 0.5s;
 }
 
@@ -180,7 +181,66 @@ header {
     transform: translate(-25%);
 }
 
+/*Frontpage index.html*/
+.frontpage {
+  height: 80vh;
+  background-image: url('photos/intro2.jpg');
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+}
 
+.jumbotron {
+  position: absolute;
+  width: 60vw;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.jumbotron a {
+  color: #333;
+  transition-duration: 0.5s;
+}
+
+.jumbotron a:hover {
+  color: #000;
+  text-decoration: underline overline;
+}
+
+.jumbotron button {
+    background: #000;
+    color: white;
+    font-weight: bold;
+    padding: 20px 50px;
+    transition-duration: 2s;
+}
+
+.jumbotron button:hover {
+    background: white;
+    color: grey;
+    border: grey;
+}
+
+.jumbotron button a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.jumbotron button a:hover {
+    color: grey;
+    transform: scale(1.5);
+}
 
 /*Container*/
 
@@ -206,7 +266,7 @@ header {
 }
 
 .introduction, .conclusion {
-    background-image: url(photos/fond-informatique-bleu.jpg);
+    background-image: url('photos/bg-black.jpg');
 }
 
 .theEnd h3 {
@@ -357,21 +417,32 @@ footer {
     padding: 1%;
     box-sizing: border-box;
     background-color: #000;
-    text-align: center;
     width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer img {
-    padding: 0 3%;
-    width: 5%;
-    height: 5%;
+    padding: 0 2vw;
+    height: 10vh;
     border-radius: 50%;
 }
 
 footer img:hover {
     opacity: 0.7;
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: transform 0.5s ease-in-out;
+}
+
+footer .icon.icon-arrow-up {
+   position: fixex;
+   bottom: 0.5em;
+   right: 0.5em;
+   font-weight: bold;
+   font-size: 2em;
+   color: #555;
 }
 
 @media screen and (max-width: 1024px) {
@@ -390,6 +461,12 @@ footer img:hover {
     }
     p.textBubble {
         font-size: 1.8vw;
+    }
+
+    footer img {
+        padding: 0 2vw;
+        height: 8.5vh;
+        border-radius: 50%;
     }
 }
 
@@ -417,6 +494,11 @@ footer img:hover {
       display: none;
     }
 
+    footer img {
+        padding: 0 2vw;
+        height: 7vh;
+        border-radius: 50%;
+    }
 }
 
 
@@ -426,6 +508,7 @@ footer img:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    min-height: 80vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -573,6 +656,7 @@ footer img:hover {
         display: none;
     }
     .photo2 {
+        top: 7vh;
         order: 1;
         border: 2px solid black;
         border-radius: 5px;
@@ -599,6 +683,7 @@ footer img:hover {
         width: 100%;
         display: flex;
         flex-direction: column;
+        min-height: 80vh;
     }
     .photo {
         display: none;
@@ -880,6 +965,7 @@ li.iconelaurene4 {
         width: 100%;
         display: flex;
         flex-direction: column;
+        min-height: 80vh;
     }
     .photo {
         display: none;
@@ -912,6 +998,7 @@ li.iconelaurene4 {
         width: 100%;
         display: flex;
         flex-direction: column;
+        min-height: 80vh;
     }
     .photo {
         display: none;
@@ -968,35 +1055,6 @@ main {
     line-height: 25px;
 }
 
-button {
-    float: right;
-    background: grey;
-    color: white;
-    font-weight: bold;
-    border 2px solid white;
-    border-radius: 0 50px;
-    transition-duration: 2s;
-}
-
-button:hover {
-    background: white;
-    color: grey;
-    border: grey;
-}
-
-button a {
-    padding: 20%;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 100px;
-}
-
-button a:hover {
-    color: grey;
-    transform: scale(1.5);
-}
-
 
 /* Summary Styles */
 
@@ -1044,7 +1102,7 @@ aside h3 {
 }
 
 #bgintro {
-    background: url('photos/fond-informatique-bleu.jpg');
+    background: url('photos/bg-black.jpg');
     color: white;
 }
 
