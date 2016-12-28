@@ -192,6 +192,11 @@ header {
   font-size: 1.4vw;
 }
 
+.chaplink {
+  padding: 0 23%;
+  text-align: center;
+}
+
 .jumbotron {
   width: 60vw;
   padding: 20px;
