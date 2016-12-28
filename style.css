@@ -186,7 +186,6 @@ header {
   height: 80vh;
   background-image: url('photos/intro2.jpg');
   background-size: cover;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,7 +193,6 @@ header {
 }
 
 .jumbotron {
-  position: absolute;
   width: 60vw;
   padding: 20px;
   text-align: center;
