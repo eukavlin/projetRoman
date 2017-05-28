@@ -107,42 +107,54 @@ header {
     height: 7vh;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    font-size: 15px;
     z-index: 99;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
 }
 
-.icon.icon-home {
-    width: 32px;
-    height: 32px;
-    transition: color 0.5s;
+.icon-bar{
+    background-color: white;
 }
 
-.icon.icon-home:hover {
-    color: #AAA;
-    transition: color 0.5s;
+.navbar-collapse {
+  background-color: black;
 }
 
-.returnhome {
-    width: 35px;
-    padding: 10px;
-    display: flex;
-    align-content: center;
+.navbar-collapse .navbar-right li a{
+  height: 7vh;
+  display: flex;
+  align-items: center;
 }
 
-.titlecenter {
+.navbar-collapse .navbar-right li a:hover{
+  color: #333;
+}
+
+.navbar-collapse .navbar-right li ul {
+  min-width: 125px;
+  background-color: black;
+  color: white;
+}
+
+.navbar-collapse .navbar-right li ul li a{
+  color: white;
+  height: auto;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.title {
     font-size: 40px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 5px;
-    display: flex;
-    align-content: center;
-    text-align: center;
     color: #000;
     font-family: OldStamper, Arial, sans-serif;
     text-shadow: 2px 2px #FFF, -2px -2px #FFF, -2px 2px #FFF, 2px -2px #FFF;
+}
+
+h1.title {
+  font-size: 400%;
 }
 
 .romanperso {
