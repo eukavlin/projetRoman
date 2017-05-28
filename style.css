@@ -479,6 +479,9 @@ footer .icon.icon-arrow-up {
     .titlecenter {
         font-size: 35px;
       }
+    .jumbotron {
+        width: 75vw;
+    }
 
     .frontpage{
       font-size: 2vw;
