@@ -108,7 +108,7 @@ header {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 15px;
-    z-index: 99;
+    z-index: 9999;
 }
 
 .icon-bar{
@@ -117,9 +117,12 @@ header {
 
 .navbar-collapse {
   background-color: black;
+  z-index: 9999;
 }
 
 .navbar-collapse .navbar-right li a{
+  background-color: black;
+  z-index: 9999;
   height: 7vh;
   display: flex;
   align-items: center;
@@ -127,9 +130,15 @@ header {
 
 .navbar-collapse .navbar-right li a:hover{
   color: #333;
+  background-color: #ddd;
+}
+
+.navbar-collapse .navbar-right li a:active{
+  color: #999;
 }
 
 .navbar-collapse .navbar-right li ul {
+  z-index: 9999;
   min-width: 125px;
   background-color: black;
   color: white;
